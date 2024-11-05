@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button id="loginBtn">Login</button>
+        <button id="registerBtn">Register</button>
+    </div>
+
+    <div id="library" style="display: none;">
+        <h2>Your Book Library</h2>
+        <input type="text" id="bookTitle" placeholder="Book Title" required>
+        <input type="text" id="bookAuthor" placeholder="Book Author" required>
+        <label for="bookCategory">Category:</label>
+        <select id="bookCategory">
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Biography">Biography</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Romance">Romance</option>
+            <option value="Other">Other</option>
+        </select>
+        <button id="addBookBtn">Add Book</button>
+        <button id="logoutBtn">Logout</button>
+    <br><br>
+	<div class="search">
+		<input type="text" required id="searchTitle" placeholder="Search by Book Title">
+		<button id="searchBtn">Search</button>
+	</div>
+    <br><br>
+		<label for="bookCategoryFilter">Filter by Category:</label>
+        <select id="bookCategoryFilter">
+            <option value="All">All</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Science">Science</option>
+            <option value="History">History</option>
+            <option value="Biography">Biography</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Romance">Romance</option>
+            <option value="Other">Other</option>
+        </select>
+	
+		<label for="sortOptions"><br>Sort by:</label>
+        <select id="sortOptions">
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="category">Category</option>
+        </select>
+
+        <h3>Books</h3>
+        <ul id="books"></ul>
+
+        <h3>Borrowed Books</h3>
+        <ul id="borrowedBooks"></ul>
+
+        <h3>BorrowedHistory</h3>
+        <ul id="historyList"></ul>
+		
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

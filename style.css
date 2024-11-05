@@ -1,0 +1,121 @@
+
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    outline:none;
+    border:none;
+    scroll-behavior: smooth;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+/* Login Form Styles */
+#loginForm {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#loginForm input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loginForm button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#loginForm button:hover {
+    background-color: #2980b9;
+    cursor: pointer;
+}
+
+/* Library Styles */
+#library {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(25, 179, 99, 0.623);
+}
+
+#library input, #library select, #library button {
+    margin: 5px 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    border: 1px solid  #27ae60;
+    border-radius: 4px;
+    /* border:solid #27ae60; */
+}
+
+#library button {
+    background-color: #27ae60;
+    color: white;
+    width:100px;
+}
+
+#library button:hover {
+    background-color: #219653;
+    cursor:pointer;
+}
+
+/* search div */
+.search
+{
+    display:flex;
+}
+/* List Styles */
+ul {
+    list-style-type:circle;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    #loginForm, #library {
+        padding: 15px;
+    }
+
+    #loginForm input, #library input, #library select, #library button {
+        width: 100%;
+    }
+}
